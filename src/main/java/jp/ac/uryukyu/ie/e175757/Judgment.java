@@ -1,7 +1,7 @@
 package jp.ac.uryukyu.ie.e175757;
 
 public class Judgment {
-    int player1=0,player2=0;
+    private int player1=0,player2=0;
     public void judge(int a,int b,int c) {
 
         if (a < b || b < a) {
