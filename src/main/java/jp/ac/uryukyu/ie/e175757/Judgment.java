@@ -3,10 +3,6 @@ package jp.ac.uryukyu.ie.e175757;
 public class Judgment {
     int player1=0,player2=0;
     public void judge(int a,int b,int c) {
-        NumJudge numjudge = new NumJudge();
-
-        a = numjudge.numjudge(a);
-        b = numjudge.numjudge(b);
 
         if (a < b || b < a) {
             if ((a == 1 || b == 1) && (a == 13 || b == 13)) {
@@ -29,6 +25,12 @@ public class Judgment {
         }
     }
     public void count(int c){
-
+        if(player1>player2){
+            System.out.println("player1の"+player1+"回勝利");
+        }else if(player2>player1){
+            System.out.println("player2の"+player2+"回勝利");
+        }else{
+            System.out.println("引き分け");
+        }
     }
 }

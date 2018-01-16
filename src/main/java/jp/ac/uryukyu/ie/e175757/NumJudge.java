@@ -2,8 +2,8 @@ package jp.ac.uryukyu.ie.e175757;
 import java.util.Scanner;
 
 public class NumJudge {
-    static int numjudge(int a){
-        int[] num=new int[13];
+    static int numjudge(int a,int[]num){
+
         Scanner sc=new Scanner(System.in);
         for(int i=0;i<13;i++){
             if(num[i]==a){
