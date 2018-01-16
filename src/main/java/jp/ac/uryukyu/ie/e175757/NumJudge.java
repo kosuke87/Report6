@@ -1,6 +1,10 @@
 package jp.ac.uryukyu.ie.e175757;
 import java.util.Scanner;
 
+/*
+* 同じ数字を打った時の処理をしたかった
+*
+* */
 public class NumJudge {
     static int numjudge(int a,int[]num){
 

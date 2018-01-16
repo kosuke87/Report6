@@ -1,5 +1,5 @@
 package jp.ac.uryukyu.ie.e175757;
-import java.util.*;
+import java.util.*; //Scannerが必要になるからimportした
 public class Main  {
     public static void main(String[] args){
         Judgment judge =new Judgment();
@@ -7,11 +7,17 @@ public class Main  {
 
         Scanner sc=new Scanner(System.in);
 
-        int player1;
-        int player2;
-        int count=0;
-        int[]num1=new int[13];
-        int[]num2=new int[13];
+        int player1;// player１の入力した値を保存する
+        int player2;// player２の入力した値を保存する
+        int count=0;// 何回目かをカウントするためのもの
+        int[]num1=new int[13];//player1の入力した数字を保存
+        int[]num2=new int[13];//player2の入力した数字を保存
+        /*
+        *for文で13回回す。
+        * player1とplayer2別で入力する。
+        * Judgmentのjudgeにplayer1とplayer2とカウントの引数を渡す。
+        * voidなので戻り値はなし。
+        * */
         for(int i=0;i<13;i++) {
             count+=1;
 
@@ -28,7 +34,10 @@ public class Main  {
 
             judge.judge(player1,player2,count);
         }
-        judge.count(count);
+        /*
+        * 合計勝利数を導き出す。
+        * */
+        judge.count();
     }
 
 }

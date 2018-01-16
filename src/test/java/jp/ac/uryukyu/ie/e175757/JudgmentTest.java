@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/*
+* 1が13に勝ててるかのテスト
+* */
 class JudgmentTest {
     @Test
     void judge() {
